@@ -1,8 +1,24 @@
-# React + Vite
+# Task 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a responsive admin dashboard built with React and Tailwind CSS. It integrates with a RESTful API to display and manage user and product data, with Firebase authentication for login and Axios for fetching data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **User Management**: Fetches user data (name, email, city) and displays full user details.
+- **Product Management**: Fetches, adds, and deletes products.
+- **Responsive Design**: Fully responsive for various devices.
+- **Authentication**: Firebase for basic user login.
+- **Data Persistence**: Uses local storage for tracking added products (immutable default data cannot be deleted).
+
+## Tech Stack
+
+- React
+- Tailwind CSS
+- Axios (for API requests)
+- Firebase Authentication
+- Local Storage (for added data tracking)
+
+## Livelink : https://xentro-task.netlify.app
+
