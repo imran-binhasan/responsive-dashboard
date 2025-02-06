@@ -13,7 +13,7 @@ const Users = () => {
         <div>
            <table className="w-full border shadow overflow-hidden rounded">
             <thead>
-                <tr>
+                <tr className="uppercase">
                     <th className="py-3 px-4 text-left font-medium text-gray-700">
                     #
                     </th>
@@ -24,10 +24,10 @@ const Users = () => {
                     Email
                     </th>
                     <th className="py-3 px-4 text-left font-medium text-gray-700">
-                    CITY
+                    City
                     </th>
                     <th className="py-3 px-4 text-left font-medium text-gray-700">
-                    ACTION
+                    Action
                     </th>
                 </tr>
             </thead>
@@ -47,7 +47,7 @@ const Users = () => {
                     {user.address?.city}
                     </td>
                     <td className="text-left py-2 px-2 md:px-4 text-sm text-gray-700">
-                        <Link to={`/user/${user.id}`} className="border py-1.5 px-3 ">Details</Link>
+                        <Link to={`/dashboard/user/${user.id}`} className="border py-1.5 px-3 ">Details</Link>
                     </td>
                 </tr>)}
             </tbody>
