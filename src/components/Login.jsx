@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 
 const Login = () => {
-  const { handleGoogleLogin, loginUser } = useContext(AuthContext);
+  const { user,handleGoogleLogin, loginUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -41,7 +41,7 @@ const Login = () => {
         <title>Login</title>
       </Helmet>
       <ToastContainer />
-      <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
+     {user?navigate('/'): <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
         {/* Video Background with Blur */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover filter blur-sm"
@@ -121,7 +121,7 @@ const Login = () => {
             </button>
           </form>
         </div>
-      </div>
+      </div>}
     </>
   );
 };

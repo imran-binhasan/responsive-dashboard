@@ -44,7 +44,7 @@ const Register = () => {
         <title>Register</title>
        
       </Helmet>
-      <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
+      {user?navigate('/'):  <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
         <ToastContainer />
         <video
           className="absolute top-0 left-0 w-full h-full object-cover filter blur-sm"
@@ -132,7 +132,8 @@ const Register = () => {
             </button>
           </form>
         </div>
-      </div>
+      </div>}
+    
     </>
   );
 };
