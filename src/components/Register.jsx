@@ -42,10 +42,7 @@ const Register = () => {
     <>
       <Helmet>
         <title>Register</title>
-        <meta
-          name="description"
-          content="Create a new account on Lodgio and start your journey with us."
-        />
+       
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
         <ToastContainer />
@@ -62,7 +59,7 @@ const Register = () => {
         <div className="absolute top-0 left-0 w-full p-4 bg-transparent z-20">
           <div className="flex justify-between items-center">
             <h3 className="text-white text-lg font-medium">
-              <Link to={"/dashboard"}>Dashboard</Link>
+              <Link to={"/dashboard/users"}>Dashboard</Link>
             </h3>
             <p className="text-gray-300 border rounded p-1">
               Already have an account?{" "}

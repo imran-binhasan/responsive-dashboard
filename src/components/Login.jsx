@@ -38,11 +38,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>Login - Lodgio</title>
-        <meta
-          name="description"
-          content="Log in to your Lodgio account to manage bookings and more."
-        />
+        <title>Login</title>
       </Helmet>
       <ToastContainer />
       <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
@@ -60,7 +56,7 @@ const Login = () => {
         <div className="absolute top-0 left-0 w-full p-4 bg-transparent z-20">
           <div className="flex justify-between items-center">
            <h3 className="text-white text-lg font-medium">
-              <Link to={"/dashboard"}>Dashboard</Link>
+              <Link to={"/dashboard/users"}>Dashboard</Link>
             </h3>
             <p className="text-gray-300 border rounded p-1">
               Don't have an account?{" "}
