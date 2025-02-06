@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ClipLoader } from "react-spinners"; // For loading animation
-import { toast } from "react-toastify"; // For notifications
-import 'react-toastify/dist/ReactToastify.css'; // Ensure styles are imported
+import { ClipLoader } from "react-spinners"; 
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 // Notify with success
 const notifyRemove = (productName) => {
